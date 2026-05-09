@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data files
+# By default we DON'T gitignore data/ because the GitHub Actions workflow
+# wants to commit ingested files back to the repo.
+# If you're running locally and don't want to commit the ~1MB JSONs,
+# uncomment this line:
+# data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+#data
+data/
