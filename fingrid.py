@@ -21,7 +21,7 @@ params = {
 response = requests.get(url, headers={"x-api-key": API_KEY}, params=params)
 data = response.json()
 
-filename = f"data/fingrid_{day}.json"
+filename = f"data/fingrid_{DATASET_ID}_{day}.json"
 
 os.makedirs("data", exist_ok=True)
 with open(filename, "w") as f:
